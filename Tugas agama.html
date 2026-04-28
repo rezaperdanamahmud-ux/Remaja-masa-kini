@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remaja Massa Kini</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg, #0f2027, #203a43);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Background bintang */
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    animation: moveStars 100s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveStars {
+    from {background-position: 0 0;}
+    to {background-position: 1500px 1500px;}
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(12px);
+    padding: 12px;
+    text-align: center;
+    z-index: 100;
+}
+
+nav a {
+    color: #00e6a8;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #00e6a8;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.typing {
+    border-right: 3px solid #00e6a8;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(30) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Card modern */
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    transform: translateY(80px) scale(0.95);
+    opacity: 0;
+    transition: 0.8s cubic-bezier(.2,.8,.2,1);
+}
+
+.card.show {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,255,170,0.2);
+}
+
+/* Judul */
+h2 {
+    color: #00e6a8;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #8fffd1;
+    margin-top: 15px;
+}
+
+/* Parallax section */
+.parallax {
+    height: 200px;
+    background: url('https://images.unsplash.com/photo-1542810634-71277d95dcbb') center/cover fixed;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+}
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<nav>
+<a href="#pendahuluan">Pendahuluan</a>
+<a href="#isi">Isi</a>
+<a href="#penutup">Penutup</a>
+</nav>
+
+<header>
+<h1 class="typing">DAKWAH TULISAN</h1>
+<h2>“REMAJA MASA KINI”</h2>
+<p>Kelompok 2 - Kelas XI-A1</p>
+</header>
+
+<div class="container">
+
+<div class="card" id="pendahuluan">
+<h2>Pendahuluan</h2>
+<p>
+Remaja masa kini hidup di zaman yang serba cepat dan penuh perubahan. Teknologi berkembang pesat, informasi tersebar luas hanya dalam hitungan detik, dan gaya hidup terus berubah mengikuti tren. Di satu sisi, hal ini memberikan kemudahan. Namun di sisi lain, juga menghadirkan tantangan besar bagi remaja dalam menjaga jati diri dan nilai-nilai keislaman.
+Tidak sedikit remaja yang mulai kehilangan arah, lebih sibuk mengejar pengakuan di media sosial dibandingkan memperbaiki diri. Hal ini menjadi tanda bahwa remaja masa kini membutuhkan bimbingan agar tetap berada di jalan yang benar.
+</p>
+</div>
+
+<div class="parallax"></div>
+
+<div class="card" id="isi">
+<h2>Isi Dakwah</h2>
+
+<h3>Tantangan</h3>
+<p>
+Remaja masa kini menghadapi berbagai tantangan seperti pengaruh media sosial yang kuat, pergaulan bebas, dan tekanan untuk selalu terlihat sempurna. Mereka juga sering mengalami kebingungan dalam mencari jati diri, sehingga mudah terpengaruh oleh lingkungan dan tren. Selain itu, kedisiplinan yang menurun serta tekanan mental seperti stres dan rasa cemas juga menjadi masalah yang banyak dialami.
+</p>
+
+<h3>Dampak</h3>
+<p>
+Dampaknya bisa membuat remaja kehilangan arah hidup, menurunnya kualitas ibadah, serta terbentuknya kebiasaan buruk seperti malas dan tidak disiplin. Selain itu, pengaruh negatif juga bisa merusak akhlak, menjauhkan dari nilai agama, dan memicu masalah mental seperti stres, cemas, hingga rendahnya rasa percaya diri.
+</p>
+
+<h3>Solusi</h3>
+<p>
+Solusinya adalah dengan memperkuat iman dan mendekatkan diri kepada Allah agar memiliki pegangan hidup yang jelas. Remaja juga perlu belajar mengontrol diri, terutama dalam penggunaan media sosial dan pergaulan. Mengisi waktu dengan kegiatan yang bermanfaat seperti belajar, berorganisasi, atau kegiatan positif lainnya dapat membantu menjauh dari hal negatif. Selain itu, memilih lingkungan dan teman yang baik sangat penting karena akan sangat mempengaruhi perilaku dan arah hidup seseorang.
+</p>
+
+</div>
+
+<div class="card" id="penutup">
+  <h2>Penutup</h2>
+  <p>
+    Sebagai remaja masa kini, penting untuk menyadari bahwa setiap pilihan yang diambil hari ini akan menentukan masa depan. Tantangan memang tidak bisa dihindari, tetapi dengan iman yang kuat, sikap yang bijak, dan kemauan untuk terus memperbaiki diri, semua itu bisa dihadapi.
+  </p>
+
+  <p>
+    Allah SWT berfirman:
+    <br><br>
+    <i>“Sesungguhnya Allah tidak akan mengubah keadaan suatu kaum hingga mereka mengubah keadaan yang ada pada diri mereka sendiri.”</i>
+    <br>(QS. Ar-Ra’d: 11)
+  </p>
+
+  <p>
+    Rasulullah SAW bersabda:
+    <br><br>
+    <i>“Manfaatkan lima perkara sebelum lima perkara: masa mudamu sebelum datang masa tuamu...”</i>
+    <br>(HR. Al-Hakim)
+  </p>
+
+  <p>
+    Gunakan masa muda untuk hal yang bermanfaat dan mendekatkan diri kepada Allah, agar menjadi generasi yang kuat, berakhlak baik, dan membawa kebaikan bagi banyak orang.
+  </p>
+</div>
+
+<div class="card">
+<h2>Nama Kelompok</h2>
+<ul>
+<li>Abd. Marik Benzema</li>
+<li>A.M Darda N. Salam</li>
+<li>Reza Perdana Mahmud</li>
+<li>Cici Agustina Khaunar</li>
+<li>Angesya Kayla Siti Kemhay</li>
+<li>Dwi M Deswita Sapsuha</li>
+<li>Djulfa Basahona</li>
+<li>Mutiara A Banapon</li>
+<li>Kurnia Ahmad</li>
+<li>Husdalifa Kandu</li>
+<li>Sri Mutia Selpia</li>
+<li>Wa Ode Fadilah Azzaliya</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Kelompok 2</p>
+</footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+    let trigger = window.innerHeight * 0.85;
+
+    cards.forEach(card => {
+        let top = card.getBoundingClientRect().top;
+        if(top < trigger){
+            card.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+    </html>
